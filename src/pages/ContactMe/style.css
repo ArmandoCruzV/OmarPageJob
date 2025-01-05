@@ -1,0 +1,94 @@
+.contact {
+  max-width: 100vw;
+  height: 100vh;  
+  margin-top: -2rem;
+  background: #272727;
+}
+
+.h1-contact--container {
+  top: -2rem;
+  width: 100%;
+  height: auto;
+  text-align: center; 
+  position: absolute;
+}
+
+.h1-contact {
+  color: white;
+  width: 60%;
+  justify-self: center;
+  border-radius: 12px;
+  padding: 0.7rem;
+  border-top: 1.7px solid white;
+  background: linear-gradient(to right,  #FA812F, #FF7F3E ,#C84C05); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  box-shadow: 0px 5px 5px 0px black;
+}
+
+.contact-container {
+  margin-top: 1rem;
+  padding-top: 3rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 0% 50% 0% 50%;
+  background: linear-gradient(to left, #1488cc, #2b32b2);
+  box-shadow: 0px 20px 30px 20px rgba(0, 0, 100, .5);
+  z-index: 9;
+}
+
+.fondo-container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.fondo-contact {
+  width: 100%;
+  height: 100vh;
+  object-position: 50% 50%;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho */
+  gap: 20px;
+  color: white;
+  padding: 1rem;
+}
+
+.information p {
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem;
+  border-radius: 12px; 
+}
+
+.ul-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  list-style: none;
+}
+
+.facebook,
+.instagram,
+.youtube {
+  font-size: 3.5rem;
+  padding: 0.2rem;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.5);
+  box-shadow: 0px 5px 5px 5px  rgba(0,0,0,0.6);
+}
+
+.facebook {
+  color: #1F509A;
+}
+
+.instagram {
+  color: #EB8317;
+}
+
+.youtube {
+  color: #FF4545;
+}
+
+

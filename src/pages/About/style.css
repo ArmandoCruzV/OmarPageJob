@@ -1,0 +1,127 @@
+.about {
+  position: relative;
+  background: linear-gradient(to top,  #00337C 0% ,#0B192C 10%, #000000);
+  padding-top: 90px;
+  max-width: 100vw; 
+  height: 100vh; 
+  border-radius: 0% 0% 25px 25px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
+}
+
+.text-container {
+  max-width: 100vw;
+}
+
+.omar {
+  width: 50%;
+  height: 100%;
+  border-radius:50%;
+  filter:drop-shadow(0px 0px 10px #31363F);
+  object-fit: cover;
+  object-position: center; 
+  background: #fafafa10;
+  backdrop-filter: blur(0.4rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.fondo {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  justify-self: center; 
+  position: absolute;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.about-container {
+  position: relative;
+  border-radius: 9px;
+  padding-top: 10vh;  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.h1-container {
+  width: 380px; 
+  justify-self: start;
+  text-align: start;
+  padding: 5px;
+}
+
+.about-container h1 {
+background: linear-gradient(to right, #3a7bd5, #00d2ff);
+
+  background-clip: text;  
+  font-family: 'Georgia', serif;  
+  font-size: 4rem;
+  color: transparent; 
+  white-space: nowrap;
+  width: 18ch;
+  overflow: hidden;
+
+  animation: type 3s;
+}
+@keyframes type {
+  from { width: 0; }
+}
+
+h3 { 
+  align-self: center; 
+  color: white;
+  font-size: 2rem;
+  font-family: 'Georgia', serif;  
+}
+
+@media (max-width: 500px){
+  .about { 
+    max-width: 100vw;  
+    padding: 0.5rem;
+    padding-top: 80px;
+  }
+  .about-container {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    
+  }
+
+  .about-container h1 {
+    font-size:2.1rem;
+  }
+  
+  .h1-container {
+    width: 100%; 
+    justify-items:center;
+    padding: 0.7rem;
+  }
+
+  .h3-container {
+    width: 100%;
+    height: 70%;
+    padding: 0.8rem;
+    background: linear-gradient(45deg,#fc4a1a,#f7b733);
+    border-radius: 10px 100px / 120px;
+    display: grid;
+  }
+
+  h3 {
+    font-size: 1.3rem; 
+  }
+
+  .omar {
+    width: 12rem;
+    height: 12rem;
+    justify-self: start;
+    align-self: end;
+  }
+
+}
