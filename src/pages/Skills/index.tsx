@@ -11,8 +11,7 @@ const Skills: React.FC = () => {
         <div className='contexto'>
           <img src={molino} className='molino' />
           <p>
-            Mantenimiento, reparación y creación de piezas para molinos de trituración de plástico
-            Me especializo en el mantenimiento, reparación y fabricación de piezas para molinos industriales destinados a la trituración de plástico. Con años de experiencia en la industria, ofrezco soluciones eficientes y de alta calidad para garantizar el óptimo funcionamiento de los equipos. Desde la fabricación de componentes personalizados hasta la reparación de partes desgastadas, mi enfoque está en proporcionar servicios que maximicen la productividad y prolonguen la vida útil de los molinos. Trabajo con materiales resistentes y tecnología avanzada para asegurar resultados duraderos y un rendimiento superior en el proceso de trituración.
+            Me especializo en el mantenimiento, reparación, fabricación y venta de piezas para molinos industriales destinados a la trituración de plástico. Con años de experiencia en la industria, ofrezco soluciones eficientes y de alta calidad para garantizar el óptimo funcionamiento de los equipos. Desde la fabricación de componentes personalizados hasta la reparación de partes desgastadas y la venta de piezas de repuesto, mi enfoque está en proporcionar servicios que maximicen la productividad y prolonguen la vida útil de los molinos. Trabajo con materiales resistentes y tecnología avanzada para asegurar resultados duraderos y un rendimiento superior en el proceso de trituración.
           </p>
         </div>
 

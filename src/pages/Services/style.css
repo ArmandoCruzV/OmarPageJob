@@ -115,4 +115,15 @@ ul.servicios li::before {
   .h1 {
     font-size: 2.5rem;
   }
+
+  .domicilio {
+    padding: 5%;
+  }
+
+  .h3-domicilio {
+    padding: 10%;
+    text-align: center;
+    background: #FF9D23;
+    border-radius:10% / 50% ;
+  }
 }

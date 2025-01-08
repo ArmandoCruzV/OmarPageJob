@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../assets/logo2.png"
+import logo from "../assets/logo.jpeg"
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import './style.css';

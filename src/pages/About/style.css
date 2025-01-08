@@ -64,7 +64,7 @@ background: linear-gradient(to right, #3a7bd5, #00d2ff);
   font-size: 4rem;
   color: transparent; 
   white-space: nowrap;
-  width: 18ch;
+  width: 5ch;
   overflow: hidden;
 
   animation: type 3s;
@@ -81,8 +81,13 @@ h3 {
 }
 
 @media (max-width: 500px){
+  .fondo {
+    height: 27vh;
+  }
+
   .about { 
-    max-width: 100vw;  
+    max-width: 100vw;
+    height: auto;
     padding: 0.5rem;
     padding-top: 80px;
   }
@@ -96,6 +101,7 @@ h3 {
 
   .about-container h1 {
     font-size:2.1rem;
+    text-align: center;
   }
   
   .h1-container {
@@ -118,10 +124,11 @@ h3 {
   }
 
   .omar {
-    width: 12rem;
-    height: 12rem;
-    justify-self: start;
+    width: 50%;
+    height: 50vw;
+    justify-self: center;
     align-self: end;
+    margin-top: 55%;
   }
 
 }

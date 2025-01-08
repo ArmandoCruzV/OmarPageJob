@@ -1,5 +1,5 @@
-import fondo from "../../assets/fondo2.jpg"
-import omar from "../../assets/cachitos.png"
+import fondo from "../../assets/fondo2.jpeg"
+import omar from "../../assets/logo.jpeg"
 import './style.css'
 
 const About: React.FC = () => {
@@ -13,10 +13,10 @@ const About: React.FC = () => {
 
         <div className="text-container">
           <div className='h1-container' >
-            <h1>OMAR  CACHITOS</h1>
+            <h1>J.O.R</h1>
           </div>
           <div className='h3-container'>
-            <h3>Mantenimiento, reparación y creación de piezas para molinos</h3>
+            <h3>Mantenimiento, reparación, creación y venta de piezas para molinos.</h3>
           </div>
         </div>
       </div>

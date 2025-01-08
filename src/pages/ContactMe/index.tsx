@@ -12,12 +12,12 @@ const ContactMe: React.FC = () => {
           <h1 className="h1-contact">Contactame</h1>
         </div>
         <div className="information" >
-          <p><strong>Teléfono:</strong> +52 55 6479 3124 <br /> +52 56 2977 6033</p>
-          <p><strong>Correo Electrónico:</strong> contacto@tudominio.com</p>
-          <p><strong>Dirección:</strong> Calle 123, Estado. México · Municipio. Zumpango</p>
+          <p><strong>Teléfono:</strong> 59 1114 0456 <br /> 55 6479 3124</p>
+          <p><strong>Correo Electrónico:</strong> mantenimiento.jore@gmail.com </p>
+          <p><strong>Dirección:</strong> Estado. México · Municipio. Zumpango</p>
           <p><strong>Redes Sociales:</strong></p>
           <ul className="ul-contact">
-            <li><a href="https://facebook.com/tuempresa"><FaFacebookSquare className="facebook" /></a></li>
+            <li><a href="https://www.facebook.com/share/r/19qWw6nBG4/"><FaFacebookSquare className="facebook" /></a></li>
             <li><a href="https://twitter.com/tuempresa"><AiFillInstagram className="instagram" /></a></li>
             <li><a href="https://linkedin.com/in/tuempresa"><FaYoutube className="youtube" /></a></li>
           </ul>
