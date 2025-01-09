@@ -3,7 +3,7 @@ import './style.css'
 
 const Skills: React.FC = () => {
   return (
-    <div className="skills">
+    <div id="sobre-nosotros" className="skills">
       <div className="skills-container">
         <div className='h1-skills-container'>
           <h1>Sobre nosotros</h1>

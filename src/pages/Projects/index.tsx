@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
 
 
   return (
-    <div className="projects" >
+    <div id="proyectos" className="projects" >
       <div className="projects-container" >
         <div className="h1-projects-container">
           <h1 className="h1-projects">Proyectos</h1>

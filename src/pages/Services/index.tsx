@@ -4,7 +4,7 @@ import './style.css'
 
 const Services: React.FC = () => {
   return (
-    <div className="services">
+    <div id="servicios" className="services">
       <div className='services-container'>
         <div className='circulo'></div>
         <div className='circulo2'></div>

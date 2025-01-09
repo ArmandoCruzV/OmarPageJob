@@ -5,7 +5,7 @@ import './style.css'
 const About: React.FC = () => {
 
   return (
-    <div className='about' >
+    <div id="inicio" className='about' >
       <div className='about-container' >
         <img src={fondo} className="fondo" />
 

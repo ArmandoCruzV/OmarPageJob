@@ -6,7 +6,7 @@ import "./style.css";
 
 const ContactMe: React.FC = () => {
   return (
-    <div className="contact">
+    <div id="contacto" className="contact">
       <div className="contact-container">
         <div className="h1-contact--container">
           <h1 className="h1-contact">Contactame</h1>
