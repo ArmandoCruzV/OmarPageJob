@@ -1,11 +1,9 @@
 .about {
   position: relative;
-  background: linear-gradient(to top,  #00337C 0% ,#0B192C 10%, #000000);
-  padding-top: 90px;
+  background: #272727;
+  padding-top: 80px;
   max-width: 100vw; 
   height: 100vh; 
-  border-radius: 0% 0% 25px 25px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
 }
 
 .text-container {
@@ -25,20 +23,33 @@
 }
 
 .fondo {
-  width: 100vw;
-  height: 40vh;
+  max-width: 100vw;
+  height: 70vh;
   object-fit: cover;
   object-position: center;
   top: 0;
   justify-self: center; 
   position: absolute;
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5); 
+  border-radius: 9px;
   z-index: -1;
 }
 
-.about-container {
-  position: relative;
-  border-radius: 9px;
+.fondo2 {
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  filter: blur(1.5rem);
+  z-index: -2;
+}
+
+.about-container { 
+  background: linear-gradient(to top,  #00337C 0% ,#0B192C 10%, #000000);
+  position: relative; 
+  border-radius: 0% 0% 25px 25px;
   padding-top: 10vh;  
   display: grid;
   grid-template-columns: repeat(auto-fill, 500px);
@@ -46,14 +57,17 @@
   align-content: center;
   width: 100%;
   height: 100%;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
 
 .h1-container {
-  width: 380px; 
+  width: 180px; 
   justify-self: start;
-  text-align: start;
+  text-align: center;
   padding: 5px;
+  background: rgba(000,000,000, 0.5);
+  border-radius: 12px;
 }
 
 .about-container h1 {
@@ -77,12 +91,16 @@ h3 {
   align-self: center; 
   color: white;
   font-size: 2rem;
-  font-family: 'Georgia', serif;  
+  font-family: 'Georgia', serif;   
+  text-shadow: 0 0px 10px rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 500px){
   .fondo {
-    height: 27vh;
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;  
+    border-radius: 0px;
   }
 
   .about { 
@@ -108,6 +126,7 @@ h3 {
     width: 100%; 
     justify-items:center;
     padding: 0.7rem;
+    background: transparent;
   }
 
   .h3-container {
@@ -129,6 +148,10 @@ h3 {
     justify-self: center;
     align-self: end;
     margin-top: 55%;
+  }
+
+  .fondo2 {
+    display: none;
   }
 
 }

@@ -2,9 +2,13 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import fondo from "../../assets/fondo.png";
+import { ScrollGSAP } from "../../Animation/index.tsx"
 import "./style.css";
 
 const ContactMe: React.FC = () => {
+
+  ScrollGSAP(".contact")
+
   return (
     <div id="contacto" className="contact">
       <div className="contact-container">

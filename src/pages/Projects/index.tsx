@@ -20,9 +20,12 @@ import p from "../../assets/16.jpeg";
 import q from "../../assets/17.jpeg";
 import r from "../../assets/18.jpeg";
 import s from "../../assets/19.jpeg";
+import { ScrollGSAP } from "../../Animation/index.tsx"
 import "./style.css";
 
 const Projects: React.FC = () => {
+
+  ScrollGSAP(".projects")
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [

@@ -6,6 +6,8 @@
 }
 
 .services-container {
+  width: 70%;
+  justify-self: center;
   position: relative;
   overflow: hidden;
   border-radius: 9px;
@@ -13,9 +15,13 @@
   background: #348F50;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 3% 10% 5% 10%;
+  margin-bottom: 1rem;
 }
 
 .h1 {
+  width: 40%;
+  justify-self: center;
   color: white;
   text-align: center;
   font-family: arial;
@@ -29,6 +35,7 @@ background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, F
 ul.servicios {
   list-style-type: none; /* Elimina los puntos de la lista */
   padding: 0;
+  font-size: larger;
 }
 
 ul.servicios li {
@@ -86,14 +93,27 @@ ul.servicios li::before {
   transform: translate(-10%, -10%);
 }
 
+
+  .domicilio {
+    text-align: center; 
+    background: #FF9D23;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 70%;
+    justify-self: center;
+}
+
 .mantenimiento-ejem {
-  width: 100%;
+  width: 50%;
+  height: 50%;
+  height: auto;
+  justify-self: center;
   position:relative;
 }
 
 .molinoMantenimiento, .molinoDesgaste {
   width: 100%;
-  height: 100vw;
+  height: 100%;
   margin-top: 1rem;
   border-radius: 9px;
   object-fit: cover;
@@ -113,11 +133,13 @@ ul.servicios li::before {
 
 @media (max-width: 768px) {
   .h1 {
+    width: 65vw;
     font-size: 2.5rem;
   }
-
+  
   .domicilio {
     padding: 5%;
+    width: 100%;
   }
 
   .h3-domicilio {
@@ -126,4 +148,22 @@ ul.servicios li::before {
     background: #FF9D23;
     border-radius:10% / 50% ;
   }
+
+  .services-container {
+    width: 100%;
+    justify-self: center;
+    padding: 5%;
+  }
+
+  ul.servicios {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .mantenimiento-ejem {
+    width: 100%;
+    position:relative;
+  }
+
 }

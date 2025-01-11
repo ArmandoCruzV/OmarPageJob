@@ -1,14 +1,20 @@
 import molinoDesgaste from "../../assets/molinoDesgaste.jpeg";
 import molinoMantenimiento from "../../assets/molinoMantenimiento.jpeg";
+import { ScrollGSAP } from "../../Animation/index.tsx"
 import './style.css'
 
 const Services: React.FC = () => {
+
+  ScrollGSAP(".services")
+
   return (
     <div id="servicios" className="services">
       <div className='services-container'>
         <div className='circulo'></div>
         <div className='circulo2'></div>
-        <h1 className='h1'>Servicios</h1>
+        <div className='h1-services'>
+          <h1 className='h1'>Servicios</h1>
+        </div>
         <ul className='servicios'>
           <li>Contamos con un servicio especializado en la reparación de fresas, taladros y cuchillas de alta precisión.</li>
           <li>Afilado de cuchillas: Ofrecemos afilado de cuchillas para asegurar su eficiencia y durabilidad, ya sea en nuestro taller o con servicio a domicilio.</li>

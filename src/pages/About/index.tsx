@@ -8,6 +8,7 @@ const About: React.FC = () => {
     <div id="inicio" className='about' >
       <div className='about-container' >
         <img src={fondo} className="fondo" />
+        <img src={fondo} className="fondo2" />
 
         <img src={omar} className="omar" />
 
