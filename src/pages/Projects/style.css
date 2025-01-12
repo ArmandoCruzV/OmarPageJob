@@ -38,9 +38,9 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel img {
+.carousel .img-projects-container {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .nav-button {
@@ -75,6 +75,8 @@
 }
 
 .img-projects {
+  width: 100vw;
+  height: 90vh;
   object-fit: cover;
 }
 

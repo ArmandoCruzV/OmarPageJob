@@ -76,9 +76,13 @@ const Projects: React.FC = () => {
             className="carousel"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            {images.map((index) => (
-              index
+
+            {images.map((image, index) => (
+              <div className='img-projects-container' key={index}> {/* Usar el índice como clave */}
+                {image} {/* Renderiza la imagen aquí */}
+              </div>
             ))}
+
           </div>
 
           {/* Botones de navegación */}
