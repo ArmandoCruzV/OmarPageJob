@@ -25,12 +25,12 @@ import { ScrollGSAPX } from "../../Animation/animationX.tsx"
 import "./style.css";
 
 const Projects: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   ScrollGSAP(".projects")
   ScrollGSAPX(".h1-projects-container", 50)
   ScrollGSAPX(".carousel-container", 50 - 100)
 
-  const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     <img src={a} className='img-projects' />,
     <img src={b} className='img-projects' />,
@@ -62,8 +62,6 @@ const Projects: React.FC = () => {
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
   };
-
-
   return (
     <div id="proyectos" className="projects" >
       <div className="projects-container" >
