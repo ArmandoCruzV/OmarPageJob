@@ -1,11 +1,16 @@
 import molinoDesgaste from "../../assets/molinoDesgaste.jpeg";
 import molinoMantenimiento from "../../assets/molinoMantenimiento.jpeg";
 import { ScrollGSAP } from "../../Animation/index.tsx"
+import { ScrollGSAPX } from "../../Animation/animationX.tsx"
 import './style.css'
 
 const Services: React.FC = () => {
 
   ScrollGSAP(".services")
+  ScrollGSAPX(".h1-services", 50)
+  ScrollGSAPX(".servicios", 50 - 100)
+  ScrollGSAPX(".domicilio", 50)
+  ScrollGSAPX(".mantenimiento-ejem", 50 - 100)
 
   return (
     <div id="servicios" className="services">

@@ -21,11 +21,14 @@ import q from "../../assets/17.jpeg";
 import r from "../../assets/18.jpeg";
 import s from "../../assets/19.jpeg";
 import { ScrollGSAP } from "../../Animation/index.tsx"
+import { ScrollGSAPX } from "../../Animation/animationX.tsx"
 import "./style.css";
 
 const Projects: React.FC = () => {
 
   ScrollGSAP(".projects")
+  ScrollGSAPX(".h1-projects-container", 50)
+  ScrollGSAPX(".carousel-container", 50 - 100)
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [

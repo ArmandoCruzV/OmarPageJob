@@ -1,10 +1,13 @@
 import molino from '../../assets/molino1.png'
 import { ScrollGSAP } from "../../Animation/index.tsx"
+import { ScrollGSAPX } from "../../Animation/animationX.tsx"
 import './style.css'
 
 const Skills: React.FC = () => {
 
   ScrollGSAP(".skills")
+  ScrollGSAPX(".contexto", 50)
+  ScrollGSAPX(".h1-skills-container", 50 - 100)
 
   return (
     <div id="sobre-nosotros" className="skills">

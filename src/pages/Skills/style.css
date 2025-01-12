@@ -4,6 +4,7 @@
   padding: 1rem;
   padding-top: 6.5rem;
   background: #272727;
+  overflow-x: hidden;
 }
 
 .skills-container {

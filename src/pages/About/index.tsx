@@ -1,8 +1,11 @@
 import fondo from "../../assets/fondo2.jpeg"
 import omar from "../../assets/logo.jpeg"
+import { ScrollGSAP } from "../../Animation/index"
 import './style.css'
 
 const About: React.FC = () => {
+
+  ScrollGSAP(".h3-container")
 
   return (
     <div id="inicio" className='about' >

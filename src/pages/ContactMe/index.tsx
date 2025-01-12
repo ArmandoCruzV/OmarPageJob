@@ -3,11 +3,14 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
 import fondo from "../../assets/fondo.png";
 import { ScrollGSAP } from "../../Animation/index.tsx"
+import { ScrollGSAPX } from "../../Animation/animationX.tsx"
 import "./style.css";
 
 const ContactMe: React.FC = () => {
 
   ScrollGSAP(".contact")
+  ScrollGSAPX(".information", 50)
+  ScrollGSAPX(".h1-contact--container", 50 - 100)
 
   return (
     <div id="contacto" className="contact">
