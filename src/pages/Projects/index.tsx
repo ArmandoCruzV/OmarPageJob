@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import a from "../../assets/1.jpeg";
@@ -60,6 +60,14 @@ const Projects: React.FC = () => {
   }
   includeImgSubtract()
 
+  // Efecto para configurar el intervalo
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 2000); // Cambia cada 1 segundo
+
+    // Limpia el intervalo al desmontar el componente
+    return () => clearInterval(interval);
+  }, [currentIndex]); // Dependencia en currentIndex para reiniciar el intervalo
+
   return (
     <div id="proyectos" className="projects" >
       <div className="projects-container" >
@@ -72,7 +80,7 @@ const Projects: React.FC = () => {
           {
             <div className="carousel" >
               <img src={`${images[indexSubtract]}`} className='img-projects--left' />
-              <img src={`${images[currentIndex]}`} className='img-projects--center' />
+              <img src={`${images[currentIndex]}`} className="img-projects--center" />
               <img src={`${images[indexAdd]}`} className='img-projects--right' />
             </div>
           }
