@@ -1,46 +1,69 @@
 .projects {
  background: #272727;
- max-width: 100vw;
- height: auto;
- padding-top: 1.5rem;
  padding-bottom: 3.5rem;
  overflow-x: hidden;
 }
 
 .projects-container {
     display: grid;
+    grid-template-rows: 30% 80%;
     justify-content: center;
     align-items: center;
     max-width: 100vw;
-    height: auto;
+    max-height: 100vh;
     border-radius: 12px;
-    background: linear-gradient(135deg, #4B4376, #83B4FF, #373A40);
+    background: linear-gradient(160deg, #272727 80%, #83B4FF 100%);
     padding-bottom: 3rem;
 }
 
 .h1-projects {
   text-align: center;
+  width: 50%;
+  height: 100%;
+ justify-self: center; 
+
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 2.5rem;
+    color: white;
+    margin-top:10%;
+    margin-bottom: 15%;
+    background: black;
+    box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, .5);
 }
 
 .carousel-container {
     position: relative;
     justify-self: center;
     align-self: center;
-    max-width: 80vw;
-    height: auto;
-    overflow: hidden;
+    max-width: 100vw;
+    height: 100vh; 
     border-radius: 10px;
-    border: 2px solid white;
 }
 
 .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100%;
+    gap:1rem;
+    padding: 1rem;
 }
 
-.carousel .img-projects-container {
-    width: 100%;
-    height: 100%;
+.img-projects--left, .img-projects--right {
+  width: 100%;
+  height: 60%;
+  align-self: center;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.img-projects--center {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 9px; 
 }
 
 .nav-button {
@@ -74,13 +97,9 @@
     right: 10px;
 }
 
-.img-projects {
-  width: 100vw;
-  height: 90vh;
-  object-fit: cover;
-}
-
 @media (max-width: 768px) {
+
+
   .h1-projects-container {
     width: 70%;
     justify-self: center;
@@ -96,5 +115,17 @@
     background: black;
     box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, .5);
   }
-  
+
+
+.carousel {
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 100%;
+    gap:0rem;
+    padding: 1rem;
+}
+
+  .carousel-container {
+    height: auto;
+  }
+
 }

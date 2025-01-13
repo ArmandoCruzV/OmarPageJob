@@ -113,8 +113,8 @@ ul.servicios li::before {
 }
 
 .molinoMantenimiento, .molinoDesgaste {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 50vh;
   margin-top: 1rem;
   border-radius: 9px;
   object-fit: cover;

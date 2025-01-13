@@ -20,37 +20,18 @@ import p from "../../assets/16.jpeg";
 import q from "../../assets/17.jpeg";
 import r from "../../assets/18.jpeg";
 import s from "../../assets/19.jpeg";
-import { ScrollGSAP } from "../../Animation/index.tsx"
+//import { ScrollGSAP } from "../../Animation/index.tsx"
 import { ScrollGSAPX } from "../../Animation/animationX.tsx"
 import "./style.css";
 
 const Projects: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  ScrollGSAP(".projects")
-  ScrollGSAPX(".h1-projects-container", 50)
-  ScrollGSAPX(".carousel-container", 50 - 100)
+  ScrollGSAPX(".h1-projects-container", 50 - 100)
+  ScrollGSAPX(".carousel-container", 50)
 
   const images = [
-    <img src={a} className='img-projects' />,
-    <img src={b} className='img-projects' />,
-    <img src={c} className='img-projects' />,
-    <img src={d} className='img-projects' />,
-    <img src={e} className='img-projects' />,
-    <img src={f} className='img-projects' />,
-    <img src={g} className='img-projects' />,
-    <img src={h} className='img-projects' />,
-    <img src={i} className='img-projects' />,
-    <img src={j} className='img-projects' />,
-    <img src={k} className='img-projects' />,
-    <img src={l} className='img-projects' />,
-    <img src={m} className='img-projects' />,
-    <img src={n} className='img-projects' />,
-    <img src={o} className='img-projects' />,
-    <img src={p} className='img-projects' />,
-    <img src={q} className='img-projects' />,
-    <img src={r} className='img-projects' />,
-    <img src={s} className='img-projects' />,
+    a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s
   ];
 
   const totalSlides = images.length;
@@ -62,6 +43,23 @@ const Projects: React.FC = () => {
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
   };
+
+  let indexAdd = 0
+  function includeImgAdd(): number {
+    if (currentIndex >= 0 && currentIndex < 18) { indexAdd = currentIndex + 1 }
+    else { indexAdd = 0 }
+    return indexAdd;
+  }
+  includeImgAdd()
+
+  let indexSubtract = 0
+  function includeImgSubtract(): number {
+    if (currentIndex >= 1 && currentIndex <= 18) { indexSubtract = currentIndex - 1 }
+    else { indexSubtract = 18 }
+    return indexSubtract;
+  }
+  includeImgSubtract()
+
   return (
     <div id="proyectos" className="projects" >
       <div className="projects-container" >
@@ -70,20 +68,15 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="carousel-container">
-          <div
-            className="carousel"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-          >
 
-            {images.map((image, index) => (
-              <div className='img-projects-container' key={index}> {/* Usar el índice como clave */}
-                {image} {/* Renderiza la imagen aquí */}
-              </div>
-            ))}
+          {
+            <div className="carousel" >
+              <img src={`${images[indexSubtract]}`} className='img-projects--left' />
+              <img src={`${images[currentIndex]}`} className='img-projects--center' />
+              <img src={`${images[indexAdd]}`} className='img-projects--right' />
+            </div>
+          }
 
-          </div>
-
-          {/* Botones de navegación */}
           <button className="nav-button prev" onClick={prevSlide}><FaArrowAltCircleLeft className='left' /></button>
           <button className="nav-button next" onClick={nextSlide}><FaArrowAltCircleRight className='right' /></button>
         </div>
