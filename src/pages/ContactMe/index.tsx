@@ -24,9 +24,9 @@ const ContactMe: React.FC = () => {
           <p><strong>Dirección:</strong> Estado. México · Municipio. Zumpango</p>
           <p><strong>Redes Sociales:</strong></p>
           <ul className="ul-contact">
-            <li><a href="https://www.facebook.com/share/r/19qWw6nBG4/"><FaFacebookSquare className="facebook" /></a></li>
-            <li><a href="https://twitter.com/tuempresa"><AiFillInstagram className="instagram" /></a></li>
-            <li><a href="https://linkedin.com/in/tuempresa"><FaYoutube className="youtube" /></a></li>
+            <li><a href="https://www.facebook.com/share/r/19qWw6nBG4/" target="_blank"><FaFacebookSquare className="facebook" /></a></li>
+            <li><a href=""><AiFillInstagram className="instagram" /></a></li>
+            <li><a href=""><FaYoutube className="youtube" /></a></li>
           </ul>
           <p><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 AM - 5:00 PM</p>
         </div>

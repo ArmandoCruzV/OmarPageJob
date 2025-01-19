@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
+import { IoCloseCircleSharp } from "react-icons/io5";
 import a from "../../assets/1.jpeg";
 import b from "../../assets/2.jpeg";
 import c from "../../assets/3.jpeg";
@@ -26,6 +27,8 @@ import "./style.css";
 
 const Projects: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
+  const [stateImage, setStateImage] = useState(currentIndex)
 
   ScrollGSAPX(".h1-projects-container", 50 - 100)
   ScrollGSAPX(".carousel-container", 50)
@@ -42,6 +45,23 @@ const Projects: React.FC = () => {
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
+  };
+
+  const handleImageClick = () => {
+    setIsImageExpanded(true);
+  };
+
+  const handleClose = () => {
+    setIsImageExpanded(false);
+  };
+
+  const stateImageExpanded = () => {
+    setStateImage(currentIndex)
+  }
+
+  const manejarClick = () => {
+    handleImageClick();
+    stateImageExpanded();
   };
 
   let indexAdd = 0
@@ -80,13 +100,27 @@ const Projects: React.FC = () => {
           {
             <div className="carousel" >
               <img src={`${images[indexSubtract]}`} className='img-projects--left' />
-              <img src={`${images[currentIndex]}`} className="img-projects--center" />
+              <img
+                src={`${images[currentIndex]}`}
+                onClick={manejarClick}
+                style={{ cursor: 'pointer' }}
+                className="img-projects--center" />
               <img src={`${images[indexAdd]}`} className='img-projects--right' />
             </div>
           }
 
           <button className="nav-button prev" onClick={prevSlide}><FaArrowAltCircleLeft className='left' /></button>
           <button className="nav-button next" onClick={nextSlide}><FaArrowAltCircleRight className='right' /></button>
+
+          {isImageExpanded && (
+            <div className="overlay" onClick={handleClose}>
+              <div className="expanded-image-container">
+                <img src={`${images[stateImage]}`} className="expanded-image" />
+                <button className="close-button" onClick={handleClose}><IoCloseCircleSharp /></button>
+              </div>
+            </div>
+          )}
+
         </div>
       </div>
     </div>
